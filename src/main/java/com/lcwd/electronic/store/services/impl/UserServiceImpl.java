@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl    implements UserService {
 
     @Autowired
     private UserRepository userRepository;
@@ -48,4 +48,6 @@ public class UserServiceImpl implements UserService {
     public List<UserDto> searchUser(String keyword) {
         return List.of();
     }
+
+    //where
 }
