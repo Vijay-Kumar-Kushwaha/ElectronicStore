@@ -21,7 +21,7 @@ public interface UserService {
      UserDto getUserById(String userId);
 
     //get single user by email
-     UserDto getUserByEmailByEmail(String email);
+     UserDto getUserByEmail(String email);
 
     // search user
      List<UserDto> searchUser(String keyword);
