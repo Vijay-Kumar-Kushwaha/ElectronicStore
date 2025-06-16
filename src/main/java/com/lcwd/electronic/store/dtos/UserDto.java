@@ -16,5 +16,9 @@ public class UserDto {
     private String about;
     private String imageName;
 
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
 
 }

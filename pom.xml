@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+<!--			<optional>true</optional>-->
 		</dependency>
 		<dependency>
 			<groupId>org.modelmapper</groupId>
@@ -77,6 +77,8 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version> <!-- or any recent stable version -->
+							<scope>provided</scope>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
@@ -89,6 +91,8 @@
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version> <!-- or any recent stable version -->
+							<scope>provided</scope>
 						</exclude>
 					</excludes>
 				</configuration>

@@ -1,6 +1,5 @@
 package com.lcwd.electronic.store.services.impl;
 
-import ch.qos.logback.core.testUtil.RandomUtil;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.entities.User;
 import com.lcwd.electronic.store.repositories.UserRepository;
