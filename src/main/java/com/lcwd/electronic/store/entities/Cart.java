@@ -2,6 +2,7 @@ package com.lcwd.electronic.store.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.action.internal.OrphanRemovalAction;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -23,6 +24,10 @@ public class Cart {
     private User user;
 
     //mapping cart-items
-    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL,fetch = FetchType.EAGER, orphanRemoval = true)
     private List<CartItem> items = new ArrayList<>();
 }
+
+
+// if getting any error in displaying the product item then try removing below property from above
+//fetch = FetchType.EAGER,

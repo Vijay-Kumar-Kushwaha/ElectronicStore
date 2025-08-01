@@ -3,7 +3,13 @@ package com.lcwd.electronic.store.dtos;
 import com.lcwd.electronic.store.entities.Cart;
 import com.lcwd.electronic.store.entities.Product;
 import jakarta.persistence.*;
+import lombok.*;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CartItemDto {
 
     private int cartItemId;
