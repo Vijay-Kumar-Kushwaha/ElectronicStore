@@ -34,6 +34,7 @@ public class CartController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    //clear cart
     @DeleteMapping("/{userId}")
     public ResponseEntity<ApiResponseMessage> clearCart(@PathVariable String userId){
         cartService.clearCart(userId);

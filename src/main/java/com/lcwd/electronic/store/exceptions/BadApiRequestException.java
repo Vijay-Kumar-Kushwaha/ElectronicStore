@@ -7,6 +7,6 @@ public class BadApiRequestException extends RuntimeException {
     }
 
     public BadApiRequestException(){
-        super("BAd Request !!");
+        super("Bad Request !!");
     }
 }
