@@ -2,9 +2,7 @@ package com.lcwd.electronic.store.services;
 
 import com.lcwd.electronic.store.dtos.CreateOrderRequest;
 import com.lcwd.electronic.store.dtos.OrderDto;
-import com.lcwd.electronic.store.dtos.OrderItemDto;
 import com.lcwd.electronic.store.dtos.PageableResponse;
-import org.hibernate.type.OrderedSetType;
 
 import java.util.List;
 

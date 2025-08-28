@@ -2,14 +2,12 @@ package com.lcwd.electronic.store.services.impl;
 
 import com.lcwd.electronic.store.dtos.CreateOrderRequest;
 import com.lcwd.electronic.store.dtos.OrderDto;
-import com.lcwd.electronic.store.dtos.OrderItemDto;
 import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.entities.*;
 import com.lcwd.electronic.store.exceptions.BadApiRequestException;
 import com.lcwd.electronic.store.exceptions.ResourceNotFoundException;
 import com.lcwd.electronic.store.helper.Helper;
 import com.lcwd.electronic.store.repositories.CartRepository;
-import com.lcwd.electronic.store.repositories.OrderItemRepository;
 import com.lcwd.electronic.store.repositories.OrderRepository;
 import com.lcwd.electronic.store.repositories.UserRepository;
 import com.lcwd.electronic.store.services.OrderService;
@@ -89,6 +87,8 @@ public class OrderServiceImpl implements OrderService {
         cart.getItems().clear();
         cartRepository.save(cart);
         Order savedOrder = orderRepository.save(order);
+        System.out.println("Order ID before mapping: " + savedOrder.getOrderId());
+
         return modelMapper.map(savedOrder, OrderDto.class);
     }
 

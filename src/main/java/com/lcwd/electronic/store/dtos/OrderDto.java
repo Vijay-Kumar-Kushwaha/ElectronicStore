@@ -14,7 +14,7 @@ import java.util.List;
 @ToString
 public class OrderDto {
 
-    private String oderId;
+    private String orderId;
     private String orderStatus="PENDING";
     private String paymentStatus="NOTPAID";
     private int orderAmount;
