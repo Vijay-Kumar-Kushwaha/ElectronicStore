@@ -1,6 +1,5 @@
 package com.lcwd.electronic.store.entities;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import jakarta.persistence.*;
 import lombok.*;
 
